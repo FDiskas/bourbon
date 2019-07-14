@@ -10,6 +10,11 @@ project adheres to [Semantic Versioning](http://semver.org).
 - Improved error handling of unsupported font file formats in the `font-face`
   mixin (supported formats are `eot`, `ttf`, `svg`, `woff2`, and `woff`).
 
+### Changed
+
+- TTF is no longer a default font file format output by the `font-face` mixin;
+  it's now only WOFF and WOFF2.
+
 [unreleased]: https://github.com/thoughtbot/bourbon/compare/v6.0.0...HEAD
 
 ## [6.0.0] - 2019-07-10

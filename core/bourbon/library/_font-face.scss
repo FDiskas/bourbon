@@ -9,7 +9,7 @@
 ///
 /// @argument {string} $file-path
 ///
-/// @argument {string | list} $file-formats [("ttf", "woff2", "woff")]
+/// @argument {string | list} $file-formats [("woff2", "woff")]
 ///   List of the font file formats to include. Can also be set globally using
 ///   the `global-font-file-formats` key in the Bourbon settings.
 ///
@@ -27,7 +27,7 @@
 ///   @include font-face(
 ///     "source-sans-pro",
 ///     "fonts/source-sans-pro-regular",
-///     ("woff2", "woff")
+///     "woff2"
 ///   ) {
 ///     font-style: normal;
 ///     font-weight: 400;
@@ -36,8 +36,7 @@
 ///   // CSS Output
 ///   @font-face {
 ///     font-family: "source-sans-pro";
-///     src: url("fonts/source-sans-pro-regular.woff2") format("woff2"),
-///          url("fonts/source-sans-pro-regular.woff") format("woff");
+///     src: url("fonts/source-sans-pro-regular.woff2") format("woff2");
 ///     font-style: normal;
 ///     font-weight: 400;
 ///   }
